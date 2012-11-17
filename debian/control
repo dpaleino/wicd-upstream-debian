@@ -1,4 +1,4 @@
-Source: wicd
+Source: wicd-upstream
 Section: net
 Priority: optional
 Maintainer: David Paleino <dapal@debian.org>

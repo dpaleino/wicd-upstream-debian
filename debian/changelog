@@ -1,28 +1,28 @@
-wicd (1.7.2.4-4) unstable; urgency=low
+wicd-upstream (1.7.2.4-4) unstable; urgency=low
 
-  * Move user-adding code from debconf-config to wicd-daemon postinst
+  * Move user-adding code from debconf-config to wicd-upstream-daemon postinst
     (Closes: #692916)
 
  -- David Paleino <dapal@debian.org>  Sat, 10 Nov 2012 21:41:50 +0100
 
-wicd (1.7.2.4-3) unstable; urgency=low
+wicd-upstream (1.7.2.4-3) unstable; urgency=low
 
   * Fix debian/watch
-  * Recommend rfkill in wicd-daemon (Closes: #683559)
+  * Recommend rfkill in wicd-upstream-daemon (Closes: #683559)
   * Substitute dependency on dhcp3-client with isc-dhcp-client
     (Closes: #680976)
   * Fix handling of /etc/resolv.conf when it's a symlink (Closes: #691973)
 
  -- David Paleino <dapal@debian.org>  Fri, 02 Nov 2012 21:49:32 +0100
 
-wicd (1.7.2.4-2) unstable; urgency=high
+wicd-upstream (1.7.2.4-2) unstable; urgency=high
 
-  * Fix comments inside /etc/default/wicd (Closes: #668327)
+  * Fix comments inside /etc/default/wicd-upstream (Closes: #668327)
   * Fixed sanitation bug (urgency=high)
 
  -- David Paleino <dapal@debian.org>  Fri, 04 May 2012 10:22:46 +0200
 
-wicd (1.7.2.4-1) unstable; urgency=high
+wicd-upstream (1.7.2.4-1) unstable; urgency=high
 
   * New upstream version
     - really fix local privilege escalation, CVE-2012-2095 (Closes: #668397)
@@ -30,28 +30,28 @@ wicd (1.7.2.4-1) unstable; urgency=high
 
  -- David Paleino <dapal@debian.org>  Mon, 30 Apr 2012 21:32:55 +0200
 
-wicd (1.7.2.3-1) unstable; urgency=high
+wicd-upstream (1.7.2.3-1) unstable; urgency=high
 
   * New upstream version
-    - fix bug with wicd-curses and UTF-8 locales (Closes: #669602)
+    - fix bug with wicd-upstream-curses and UTF-8 locales (Closes: #669602)
 
  -- David Paleino <dapal@debian.org>  Sun, 22 Apr 2012 18:42:19 +0200
 
-wicd (1.7.2.2-1) unstable; urgency=high
+wicd-upstream (1.7.2.2-1) unstable; urgency=high
 
   * New upstream version
     - fix bug with encryption templates (Closes: #669388)
 
  -- David Paleino <dapal@debian.org>  Thu, 19 Apr 2012 22:47:05 +0200
 
-wicd (1.7.2.1-1) unstable; urgency=low
+wicd-upstream (1.7.2.1-1) unstable; urgency=low
 
   * New upstream version
-    - fix crash with wicd-curses (Closes: #668520)
+    - fix crash with wicd-upstream-curses (Closes: #668520)
 
  -- David Paleino <dapal@debian.org>  Thu, 12 Apr 2012 22:08:37 +0200
 
-wicd (1.7.2-1) unstable; urgency=low
+wicd-upstream (1.7.2-1) unstable; urgency=low
 
   * New upstream version
     - fixed local privilege escalation, CVE-2012-2095 (Closes: #668397)
@@ -63,21 +63,21 @@ wicd (1.7.2-1) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Thu, 12 Apr 2012 00:03:06 +0200
 
-wicd (1.7.1-1) unstable; urgency=low
+wicd-upstream (1.7.1-1) unstable; urgency=low
 
   * New upstream release
   * Patches refreshed to match 1.7.1's code
 
  -- David Paleino <dapal@debian.org>  Thu, 02 Feb 2012 20:36:02 +0100
 
-wicd (1.7.1~b3-5) unstable; urgency=low
+wicd-upstream (1.7.1~b3-5) unstable; urgency=low
 
   * Finally, really fix the issue with ESSIDs containing \x00
     (Closes: #655159)
 
  -- David Paleino <dapal@debian.org>  Tue, 31 Jan 2012 18:35:41 +0100
 
-wicd (1.7.1~b3-4) unstable; urgency=low
+wicd-upstream (1.7.1~b3-4) unstable; urgency=low
 
   * Fix translations even more (Closes: #655994)
   * Hopefully fixed bug with ESSIDs containing '\x00' (Closes: #655159)
@@ -85,7 +85,7 @@ wicd (1.7.1~b3-4) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Sat, 21 Jan 2012 11:24:53 +0100
 
-wicd (1.7.1~b3-3) unstable; urgency=low
+wicd-upstream (1.7.1~b3-3) unstable; urgency=low
 
   * More backports from upstream:
     - fix various translation bugs (Closes: #651804)
@@ -94,7 +94,7 @@ wicd (1.7.1~b3-3) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Fri, 16 Dec 2011 12:33:29 +0100
 
-wicd (1.7.1~b3-2) unstable; urgency=low
+wicd-upstream (1.7.1~b3-2) unstable; urgency=low
 
   * Don't wipe out configuration files (03-fix_configmanager_bug.patch)
   * Backported upstream fixes (04-backport_upstream_fixes.patch)
@@ -103,7 +103,7 @@ wicd (1.7.1~b3-2) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Sun, 11 Dec 2011 20:50:33 +0100
 
-wicd (1.7.1~b3-1) unstable; urgency=low
+wicd-upstream (1.7.1~b3-1) unstable; urgency=low
 
   * New upstream beta release
     - useless patches removed, most of them merged upstream.
@@ -111,15 +111,15 @@ wicd (1.7.1~b3-1) unstable; urgency=low
       + 01-remove_unused_icons.patch
       + 26-support_etc-network_scripts.patch
       + 32-prefer_gksu.patch
-    - documented wicd-gtk's -t option (Closes: #648757)
+    - documented wicd-upstream-gtk's -t option (Closes: #648757)
     - keep configuration files sorted (Closes: #568326)
     - show correct ESSID in status bar (Closes: #535507, #647503)
     - show correct ESSID when rescanning networks (Closes: #552254)
     - redesigned l10n system (Closes: #572375)
   * Added Dutch Debconf translation, thanks to Jeroen Schot
     (Closes: #643640)
-  * Drop kdesu, ktsuss and sudo from wicd-gtk's Recommends.
-  * Make wicd-daemon Pre-Depend on debconf (>= 1.5.34) to correctly
+  * Drop kdesu, ktsuss and sudo from wicd-upstream-gtk's Recommends.
+  * Make wicd-upstream-daemon Pre-Depend on debconf (>= 1.5.34) to correctly
     handle sr@latin translation (Closes: #647626)
   * Removed get-orig-source target from debian/rules, no more needed
   * Compile translations at build-time in debian/rules, using
@@ -130,13 +130,13 @@ wicd (1.7.1~b3-1) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Tue, 06 Dec 2011 22:05:11 +0100
 
-wicd (1.7.0+ds1-9) unstable; urgency=high
+wicd-upstream (1.7.0+ds1-9) unstable; urgency=high
 
   * Fix postinst: it breaks dh_python2's layout
 
  -- David Paleino <dapal@debian.org>  Sat, 22 Oct 2011 11:25:07 +0200
 
-wicd (1.7.0+ds1-8) unstable; urgency=low
+wicd-upstream (1.7.0+ds1-8) unstable; urgency=low
 
   * Really fix debconf when non-existing users are involved
     (Closes: #634051)
@@ -144,14 +144,14 @@ wicd (1.7.0+ds1-8) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Fri, 21 Oct 2011 23:00:49 +0200
 
-wicd (1.7.0+ds1-7) unstable; urgency=low
+wicd-upstream (1.7.0+ds1-7) unstable; urgency=low
 
   * Standards-Version bump to 3.9.2, no changes needed
   * Updated debian/copyright to match latest DEP-5
-  * Implement a -t/--tray switch to only run the wicd tray icon
+  * Implement a -t/--tray switch to only run the wicd-upstream tray icon
     (36-implement_tray-only.patch) (Closes: #583684)
   * Replace "cli" with "console" (to avoid the usage of "CLI", which is used
-    by Mono applications) in wicd-cli's short description
+    by Mono applications) in wicd-upstream-cli's short description
     (Closes: #617328)
   * Add Danish debconf translation, thanks to Joe Dalton
     (Closes: #621364)
@@ -162,7 +162,7 @@ wicd (1.7.0+ds1-7) unstable; urgency=low
   * Work-around adding non-existing users to debconf (Closes: #634051)
   * Fix suspend scripts, they had old paths (37-fix_suspend_scripts.patch)
     (Closes: #635444)
-  * Fix search for libc in wicd/misc.py (38-fix_libc_ctype_linking.patch)
+  * Fix search for libc in wicd-upstream/misc.py (38-fix_libc_ctype_linking.patch)
     (Closes: #636941)
   * 39-fix_channel_digit_parsing.patch: support channels with more than
     2 digits (Closes: #640075)
@@ -173,7 +173,7 @@ wicd (1.7.0+ds1-7) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Mon, 17 Oct 2011 22:18:06 +0200
 
-wicd (1.7.0+ds1-6) unstable; urgency=low
+wicd-upstream (1.7.0+ds1-6) unstable; urgency=low
 
   * debian/patches/:
     - 26-support_etc-network_scripts.patch refreshed, /etc/network/
@@ -190,7 +190,7 @@ wicd (1.7.0+ds1-6) unstable; urgency=low
       if the network mode is not what we expect. Thanks to Julien
       Blache for the patch (Closes: #550957)
   * debian/control:
-    - removed depedency on python-iniparse from wicd-daemon
+    - removed depedency on python-iniparse from wicd-upstream-daemon
     - removed Build-Depends on quilt
     - fixed typo in long description, thanks to Martin Eberhard Schauer
       (Closes: #611567)
@@ -200,16 +200,16 @@ wicd (1.7.0+ds1-6) unstable; urgency=low
     - don't use "--with quilt" anymore
   * debian/po/pt_BR.po added: debconf translation for Brazilian
     Portuguese, thanks to Adriano Rafael Gomes (Closes: #594266)
-  * debian/wicd-daemon.config: don't ask if all users are already
+  * debian/wicd-upstream-daemon.config: don't ask if all users are already
     in the netdev group (Closes: #588078)
-  * debian/wicd-cli.8: explain -w/--save and -m/--name (Closes: #583586)
-  * debian/wicd-daemon.wicd.init, export $PATH, makes the daemon work
+  * debian/wicd-upstream-cli.8: explain -w/--save and -m/--name (Closes: #583586)
+  * debian/wicd-upstream-daemon.wicd.init, export $PATH, makes the daemon work
     in a clean environment. Thanks to Peter Palfrader (Closes: #604810)
-  * debian/wicd-curses.postrm: redirect stderr (Closes: #605338)
+  * debian/wicd-upstream-curses.postrm: redirect stderr (Closes: #605338)
 
  -- David Paleino <dapal@debian.org>  Sat, 12 Feb 2011 00:16:58 +0100
 
-wicd (1.7.0+ds1-5) unstable; urgency=medium
+wicd-upstream (1.7.0+ds1-5) unstable; urgency=medium
 
   * debian/patches/series:
     - 26-support_etc-network_scripts.patch disabled, needs more proper
@@ -217,7 +217,7 @@ wicd (1.7.0+ds1-5) unstable; urgency=medium
 
  -- David Paleino <dapal@debian.org>  Sat, 29 May 2010 09:17:32 +0200
 
-wicd (1.7.0+ds1-4) unstable; urgency=high
+wicd-upstream (1.7.0+ds1-4) unstable; urgency=high
 
   * Urgency high because of RC #582980
   * debian/patches:
@@ -227,7 +227,7 @@ wicd (1.7.0+ds1-4) unstable; urgency=high
 
  -- David Paleino <dapal@debian.org>  Tue, 25 May 2010 19:20:33 +0200
 
-wicd (1.7.0+ds1-3) unstable; urgency=low
+wicd-upstream (1.7.0+ds1-3) unstable; urgency=low
 
   * debian/control:
     - fixed package descriptions (Closes: #574152)
@@ -246,13 +246,13 @@ wicd (1.7.0+ds1-3) unstable; urgency=low
     - 27-fix_resolv.conf_perms.patch added, make sure dhclient.conf has
       0644 permissions (Closes: #582798)
     - 28-announce_dhclient.conf.template.patch added, describe
-      /etc/wicd/dhclient.conf.template in wicd(8) (Closes: #582817)
+      /etc/wicd-upstream/dhclient.conf.template in wicd(8) (Closes: #582817)
     - 29-document_variables_passed_to_scripts.patch added (Closes: #570891)
-  * debian/NEWS.Debian updated to announce /etc/wicd/dhclient.conf.template
+  * debian/NEWS.Debian updated to announce /etc/wicd-upstream/dhclient.conf.template
 
  -- David Paleino <dapal@debian.org>  Mon, 24 May 2010 18:11:17 +0200
 
-wicd (1.7.0+ds1-2) unstable; urgency=low
+wicd-upstream (1.7.0+ds1-2) unstable; urgency=low
 
   * Fix RC bug: daemon doesn't start anymore because copy.deepcopy()
     fails with the iniparse object, coming from 20-use_iniparse.patch.
@@ -260,14 +260,14 @@ wicd (1.7.0+ds1-2) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Fri, 05 Mar 2010 18:12:51 +0100
 
-wicd (1.7.0+ds1-1) unstable; urgency=low
+wicd-upstream (1.7.0+ds1-1) unstable; urgency=low
 
   * New repacked tarball, contains translations .po files
     (Closes: #572352)
   * debian/bug-control added, let's add more info to the bugreports!
   * debian/control:
     - debhelper dependency bumped to >= 7.2.3~, to use dh_bugfiles
-    - added dependency on python-iniparse to wicd-daemon
+    - added dependency on python-iniparse to wicd-upstream-daemon
   * debian/rules:
     - make dh_bugfiles act on all packages
     - add get-orig-source target, to build a package containing the
@@ -284,43 +284,43 @@ wicd (1.7.0+ds1-1) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Thu, 04 Mar 2010 10:59:30 +0100
 
-wicd (1.7.0-3) unstable; urgency=low
+wicd-upstream (1.7.0-3) unstable; urgency=low
 
   * Remove .pyo and .pyc files upon package removal (Closes: #565637)
-    - debian/wicd-daemon.postrm updated
-    - debian/wicd-cli.postrm, debian/wicd-curses.postrm,
-      debian/wicd-gtk.postrm added
+    - debian/wicd-upstream-daemon.postrm updated
+    - debian/wicd-upstream-cli.postrm, debian/wicd-curses.postrm,
+      debian/wicd-upstream-gtk.postrm added
   * debian/control:
-    - removed trailing comma in wicd-daemon Recommends
+    - removed trailing comma in wicd-upstream-daemon Recommends
     - Standards-Version bumped to 3.8.4, no changes needed
-  * debian/wicd-daemon.postinst: better handle upgrades (Closes: #566023)
-  * debian/wicd-daemon.wicd.init: correctly handle the exit code for
+  * debian/wicd-upstream-daemon.postinst: better handle upgrades (Closes: #566023)
+  * debian/wicd-upstream-daemon.wicd.init: correctly handle the exit code for
     the "status" command (Closes: #567070)
   * debian/patches/:
-    - 03-fix_typo_wicd-cli.patch added, fixes typo preventing
-      wicd-cli from working at all (Closes: #567665)
+    - 03-fix_typo_wicd-upstream-cli.patch added, fixes typo preventing
+      wicd-upstream-cli from working at all (Closes: #567665)
 
  -- David Paleino <dapal@debian.org>  Mon, 01 Feb 2010 18:43:38 +0100
 
-wicd (1.7.0-2) unstable; urgency=low
+wicd-upstream (1.7.0-2) unstable; urgency=low
 
   * debian/rules:
     - pass --install-layout=deb to python setup.py install
       (Closes: #565536)
   * debian/control:
-    - break circular dependency, make wicd-daemon only Recommend the
+    - break circular dependency, make wicd-upstream-daemon only Recommend the
       clients. (Closes: #565608)
 
  -- David Paleino <dapal@debian.org>  Sun, 17 Jan 2010 12:40:57 +0100
 
-wicd (1.7.0-1) unstable; urgency=low
+wicd-upstream (1.7.0-1) unstable; urgency=low
 
   * Upload to unstable
   * New upstream release:
     - fixes udhcpc failure check (Closes: #563619)
     - makes network properties from command-line case-insensitive
       (Closes: #563620)
-    - wicd-cli defaults to current active network, if no network
+    - wicd-upstream-cli defaults to current active network, if no network
       ID is specified, when querying for a property. (Closes: #563622)
   * debian/patches/:
     - 01-remove_unused_icons.patch, 02-detect_ping_flavour.patch,
@@ -338,12 +338,12 @@ wicd (1.7.0-1) unstable; urgency=low
       + 13-fix_codesplit_remnants.patch
   * debian/rules:
     - remove .empty_on_purpose files from the binary packages
-  * debian/wicd-daemon.wicd.init: add $remote_fs to Required-Start
+  * debian/wicd-upstream-daemon.wicd.init: add $remote_fs to Required-Start
     and Required-Stop, thanks Lintian!
 
  -- David Paleino <dapal@debian.org>  Fri, 15 Jan 2010 11:14:13 +0100
 
-wicd (1.7.0~b3-1) experimental; urgency=low
+wicd-upstream (1.7.0~b3-1) experimental; urgency=low
 
   * New experimental upstream version
   * debian/watch updated to track latest experimental version
@@ -353,7 +353,7 @@ wicd (1.7.0~b3-1) experimental; urgency=low
       in beta release
     - 13-fix_codesplit_remnants.patch added, needed to fix some
       remaining issues happened between 1.7.0~a1 and 1.7.0~b3
-  * debian/wicd-curses.docs: adding README.curses
+  * debian/wicd-upstream-curses.docs: adding README.curses
   * debian/rules:
     - clean target, remove extra stale files
     - clean target, recreate the init/ hierarchy, needed for build
@@ -361,51 +361,51 @@ wicd (1.7.0~b3-1) experimental; urgency=low
     - don't override install-lib anymore
   * debian/*.install updated, use the new directory layout
   * debian/control:
-    - added python-wicd and wicd-cli packages
-    - remove Conflicts/Replaces from wicd binary section
-  * debian/wicd-cli.* added
-  * debian/python-wicd.install added
+    - added python-wicd-upstream and wicd-cli packages
+    - remove Conflicts/Replaces from wicd-upstream binary section
+  * debian/wicd-upstream-cli.* added
+  * debian/python-wicd-upstream.install added
 
  -- David Paleino <dapal@debian.org>  Sun, 03 Jan 2010 21:02:28 +0100
 
-wicd (1.6.2.2-5~exp2) experimental; urgency=low
+wicd-upstream (1.6.2.2-5~exp2) experimental; urgency=low
 
   * The OH-MY-GOD-IT'S-TOO-LATE brown-paper-bug upload
-  * debian/scripts/wicd-gtk, it's really a shell script, not
+  * debian/scripts/wicd-upstream-gtk, it's really a shell script, not
     a Python one o:)
 
  -- David Paleino <dapal@debian.org>  Sun, 20 Dec 2009 17:58:23 +0100
 
-wicd (1.6.2.2-5~exp1) experimental; urgency=low
+wicd-upstream (1.6.2.2-5~exp1) experimental; urgency=low
 
   * debian/README.Debian: removed old instructions
   * Most debian/* files split to proper per-package files
   * debian/control:
     - GUI and non-GUI packages split. This should allow
-      for wicd installation without depending on GTK
+      for wicd-upstream installation without depending on GTK
       (then, X) (Closes: #546906)
-    - add wicd-gtk and wicd-curses packages, both providing
-      wicd-client.
-    - added wicd-daemon package, substituting old "wicd"
+    - add wicd-upstream-gtk and wicd-curses packages, both providing
+      wicd-upstream-client.
+    - added wicd-upstream-daemon package, substituting old "wicd"
       package
-    - added wicd metapackage, depending on everything else,
+    - added wicd-upstream metapackage, depending on everything else,
       to allow seamless upgrade from older versions.
     - made all packages conflict with older versions
-    - added python-gobject dependency to wicd-daemon
+    - added python-gobject dependency to wicd-upstream-daemon
     - bump Build-Depends to use dh7 overrides and quilt
   * debian/rules:
     - fixed to deal with multiple binary packages
     - rewritten to use dh7
   * debian/source/format added -- use 3.0 (quilt)
-  * debian/wicd-curses.docs added
-  * debian/patches/12-rename_wicd-client_to_wicd-gtk.patch , rename
-    wicd-client to wicd-gtk where appropriate
+  * debian/wicd-upstream-curses.docs added
+  * debian/patches/12-rename_wicd-upstream-client_to_wicd-gtk.patch , rename
+    wicd-upstream-client to wicd-gtk where appropriate
   * debian/po/POTFILES.in fixed with the new templates file
-  * debian/wicd-gtk.links added
+  * debian/wicd-upstream-gtk.links added
 
  -- David Paleino <dapal@debian.org>  Sat, 12 Dec 2009 18:53:23 +0100
 
-wicd (1.6.2.2-4) unstable; urgency=low
+wicd-upstream (1.6.2.2-4) unstable; urgency=low
 
   * debian/control:
     - updated my email address
@@ -417,7 +417,7 @@ wicd (1.6.2.2-4) unstable; urgency=low
       between python-urwid 0.9.8.4 and python-urwid 0.9.9
       (Closes: #557462)
     - 08-fix_help_message.patch added, fix minor issue with help
-      message of wicd-curses
+      message of wicd-upstream-curses
     - 09-allow_empty_DNS.patch added, one might run a local
       forwarder and 127.0.0.1 wouldn't work (Closes: #552598)
     - 10-order_scripts_directories.patch added, scripts were run
@@ -428,7 +428,7 @@ wicd (1.6.2.2-4) unstable; urgency=low
 
  -- David Paleino <dapal@debian.org>  Sat, 05 Dec 2009 13:04:40 +0100
 
-wicd (1.6.2.2-3) unstable; urgency=low
+wicd-upstream (1.6.2.2-3) unstable; urgency=low
 
   * debian/po/ja.po updated (Closes: #554838)
   * debian/patches/06-dont_bomb_out_on_configparser_error.patch added
@@ -436,7 +436,7 @@ wicd (1.6.2.2-3) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Sat, 07 Nov 2009 16:59:06 +0100
 
-wicd (1.6.2.2-2) unstable; urgency=low
+wicd-upstream (1.6.2.2-2) unstable; urgency=low
 
   * debian/po/ja.po added, thanks to Hideki Yamane (Closes: #546231)
   * debian/control:
@@ -448,14 +448,14 @@ wicd (1.6.2.2-2) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Mon, 26 Oct 2009 10:38:22 +0100
 
-wicd (1.6.2.2-1) unstable; urgency=low
+wicd-upstream (1.6.2.2-1) unstable; urgency=low
 
   * New upstream version
     - fixed connection templates (Closes: #536219)
     - fixed Ad-Hoc Network creation (Closes: #534718, #534215)
     - fixed Ad-Hoc Network dialog unresponsiveness (Closes: #537462)
     - according to upstream, fixed random crashes with DBus handling
-      in wicd-curses (Closes: #539025)
+      in wicd-upstream-curses (Closes: #539025)
     - fixes hidden network connection bug (Closes: #545141)
   * debian/control:
     - added missing dependency on ping (iputils- or inetutils-)
@@ -473,7 +473,7 @@ wicd (1.6.2.2-1) unstable; urgency=low
     - es.po added, thanks to Francisco Javier Cuadrado (Closes: #534661)
     - fr.po added, thanks to Steve Petruzzello (Closes: #537213)
   * debian/postrm:
-    - removing /var/run/wicd on purge (Closes: #536444)
+    - removing /var/run/wicd-upstream on purge (Closes: #536444)
     - early load Debconf (Closes: #534648)
   * debian/README.Debian updated: explain the differences between
     iputils-ping and inetutils-ping, related to 02-detect_ping_flavour.patch.
@@ -481,18 +481,18 @@ wicd (1.6.2.2-1) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Mon, 07 Sep 2009 19:31:22 +0200
 
-wicd (1.6.1-3) unstable; urgency=low
+wicd-upstream (1.6.1-3) unstable; urgency=low
 
   * debian/config, debian/templates updated:
     - only show users to add to netdev, skip those who are already
       members (Closes: #534138)
     - gracefully handle upgrades from previous broken versions, where
-      debconf set a value of ${default} for wicd/users
+      debconf set a value of ${default} for wicd-upstream/users
       (Closes: #532112)
 
  -- David Paleino <d.paleino@gmail.com>  Mon, 22 Jun 2009 17:59:27 +0200
 
-wicd (1.6.1-2) unstable; urgency=low
+wicd-upstream (1.6.1-2) unstable; urgency=low
 
   * debian/control:
     - Vcs-* fields updated (oops.)
@@ -501,7 +501,7 @@ wicd (1.6.1-2) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Sun, 21 Jun 2009 20:59:17 +0200
 
-wicd (1.6.1-1) unstable; urgency=low
+wicd-upstream (1.6.1-1) unstable; urgency=low
 
   * New upstream version:
     - Add Pre/Post-Disconnection scripts (Closes: #517383)
@@ -512,7 +512,7 @@ wicd (1.6.1-1) unstable; urgency=low
     - long description wording improved, thanks to Justin B Rye
       from the debian-l10n-english mailing list
     - Recommend graphical su programs to handle scripts (and sudo for
-      wicd-curses) (Closes: #519915)
+      wicd-upstream-curses) (Closes: #519915)
     - PAPT removed from Uploaders
     - Standards-Version bumped to 3.8.2, no changes needed
   * debian/patches/:
@@ -534,20 +534,20 @@ wicd (1.6.1-1) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Sun, 21 Jun 2009 11:32:22 +0200
 
-wicd (1.6.0-2~pre1) experimental; urgency=low
+wicd-upstream (1.6.0-2~pre1) experimental; urgency=low
 
   * debian/config:
     - use getent group instead of grepping /etc/group
     - remove ${default} substitution
     - fixed typo in db_subst of ${users}
   * debian/templates:
-    - remove Default field in wicd/users (Closes: #532112)
+    - remove Default field in wicd-upstream/users (Closes: #532112)
   * debian/po/* updated
   * debian/patches/01-fix_desktop_file.patch added
 
  -- David Paleino <d.paleino@gmail.com>  Sat, 06 Jun 2009 22:35:22 +0200
 
-wicd (1.6.0-1) experimental; urgency=low
+wicd-upstream (1.6.0-1) experimental; urgency=low
 
   * New upstream version
     - DBus at_console policy fixed (Closes: #530505, #525622)
@@ -561,7 +561,7 @@ wicd (1.6.0-1) experimental; urgency=low
     - 05-fix_DBus_policy.patch removed, permissions given to the
       `netdev' group via a configuration option
     - 06-add_LC_MESSAGES_parsing.patch removed, fixed upstream (in
-      wicd/translations.py)
+      wicd-upstream/translations.py)
     - 09-fix_wire_plugging_detection.patch fixed (Closes: #522057)
     - 10-add_udhcpc_support.patch added, thanks to "madmo" from the
       Wicd forums for making it, and to Luca Capello for fixing and
@@ -572,13 +572,13 @@ wicd (1.6.0-1) experimental; urgency=low
   * debian/control:
     - Build-Dependency on po-debconf added
     - added missing dependency on lsb-base
-    - added missing dependency on python-urwid, needed by wicd-curses
+    - added missing dependency on python-urwid, needed by wicd-upstream-curses
     - added missing dependency on psmisc (Closes: #520925)
     - added alternative dependency on udhcpc
   * debian/postinst:
     - enable debconf questions
   * debian/README.Debian updated: specify that DBus should be boot-started
-    before wicd (Closes: #526408)
+    before wicd-upstream (Closes: #526408)
   * debian/init: added support for "status" command, thanks to Peter
     Eisentraut (Closes: #528928)
   * debian/rules updated
@@ -586,7 +586,7 @@ wicd (1.6.0-1) experimental; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Sat, 06 Jun 2009 01:03:58 +0200
 
-wicd (1.5.9-5) unstable; urgency=low
+wicd-upstream (1.5.9-5) unstable; urgency=low
 
   * debian/patches/:
     - 08-fix_GetIP.patch added, thanks to Giuseppe Martino
@@ -595,20 +595,20 @@ wicd (1.5.9-5) unstable; urgency=low
       Martino (Closes: #503738)
   * debian/control:
     - Standards-Version bumped to 3.8.1:
-      + debian/init fixed, /var/run/wicd created on init.d script 
+      + debian/init fixed, /var/run/wicd-upstream created on init.d script 
       start, since /var/run may be mounted as a temporary filesystem 
       (§9.3.2)
 
  -- David Paleino <d.paleino@gmail.com>  Mon, 16 Mar 2009 00:51:43 +0100
 
-wicd (1.5.9-4) unstable; urgency=low
+wicd-upstream (1.5.9-4) unstable; urgency=low
 
   * debian/control:
     - fixing typo in Depends field: dhcpd <> dhcpcd (Closes: #518459)
 
  -- David Paleino <d.paleino@gmail.com>  Fri, 06 Mar 2009 11:52:15 +0100
 
-wicd (1.5.9-3) unstable; urgency=low
+wicd-upstream (1.5.9-3) unstable; urgency=low
 
   * The brown-paper-bag bug release
   * debian/postinst:
@@ -622,7 +622,7 @@ wicd (1.5.9-3) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Fri, 27 Feb 2009 22:10:05 +0100
 
-wicd (1.5.9-2) unstable; urgency=low
+wicd-upstream (1.5.9-2) unstable; urgency=low
 
   * debian/patches/:
     - 06-add_LC_MESSAGES_parsing.patch added (Closes: #514553)
@@ -643,23 +643,23 @@ wicd (1.5.9-2) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Sun, 22 Feb 2009 21:30:47 +0100
 
-wicd (1.5.9-1) unstable; urgency=low
+wicd-upstream (1.5.9-1) unstable; urgency=low
 
   * New upstream release:
     - Fixed security hole in DBus configuration file
     - Fixed the TTLS template
   * debian/patches/:
     - 05-fix_DBus_policy.patch added, allow only members of the netdev
-      group to configure wicd (Closes: #512160)
+      group to configure wicd-upstream (Closes: #512160)
   * debian/postinst: add group "netdev", which will be the only one able
-    to configure wicd
+    to configure wicd-upstream
   * debian/control: added dependency on adduser
   * debian/NEWS.Debian and debian/docs added, explain the new permissions
     policy
 
  -- David Paleino <d.paleino@gmail.com>  Sun, 08 Feb 2009 14:57:56 +0100
 
-wicd (1.5.8-1) unstable; urgency=low
+wicd-upstream (1.5.8-1) unstable; urgency=low
 
   * New upstream release
   * debian/control:
@@ -667,22 +667,22 @@ wicd (1.5.8-1) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Fri, 09 Jan 2009 19:17:27 +0100
 
-wicd (1.5.7-2) unstable; urgency=high
+wicd-upstream (1.5.7-2) unstable; urgency=high
 
   [ David Paleino ]
   * debian/rules:
-    - passing --lib to configure, moving files in /usr/share/wicd
+    - passing --lib to configure, moving files in /usr/share/wicd-upstream
       (Closes: #510461)
-    - also removing other/55wicd in clean target
+    - also removing other/55wicd-upstream in clean target
     - binary-arch target emptied, not using it
   * debian/prerm removed:
   * debian/postinst updated:
   * debian/postrm updated:
-    - fix double-{starting,stopping} of wicd
+    - fix double-{starting,stopping} of wicd-upstream
     - forcibly reload dbus upon installation or removal
   * debian/default added.
   * debian/init updated:
-    - allow to disable the daemon in /etc/default/wicd.
+    - allow to disable the daemon in /etc/default/wicd-upstream.
 
   [ Bernd Zeimetz ]
   * debian/rules:
@@ -697,12 +697,12 @@ wicd (1.5.7-2) unstable; urgency=high
 
  -- David Paleino <d.paleino@gmail.com>  Fri, 02 Jan 2009 18:20:29 +0100
 
-wicd (1.5.7-1) unstable; urgency=low
+wicd-upstream (1.5.7-1) unstable; urgency=low
 
   * New upstream release (Closes: #503737)
   * debian/control:
     - added some runtime dependencies (not really, but used by most 
-      users) to wicd (Closes: #503739)
+      users) to wicd-upstream (Closes: #503739)
     - added Conflicts: network-manager (Closes: #509051)
     - added Suggests on pm-utils, since we now also have those
       functionalities
@@ -712,7 +712,7 @@ wicd (1.5.7-1) unstable; urgency=low
     - removes runtime-generated files (Closes: #503747)
   * debian/patches:
     - 02-fix_logfile_perms.patch added, sets permissions of 
-      /var/log/wicd/wicd.log to root:adm (Closes: #503749)
+      /var/log/wicd-upstream/wicd.log to root:adm (Closes: #503749)
     - 03-fix_lintian_manpage_warning.patch added, gives a more
       meaningful whatis entry
   * debian/rules:
@@ -728,7 +728,7 @@ wicd (1.5.7-1) unstable; urgency=low
 
  -- David Paleino <d.paleino@gmail.com>  Wed, 24 Dec 2008 17:37:13 +0100
 
-wicd (1.5.2-1) unstable; urgency=low
+wicd-upstream (1.5.2-1) unstable; urgency=low
 
   * Initial release (Closes: #465870)
 
