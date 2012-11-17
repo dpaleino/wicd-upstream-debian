@@ -7,9 +7,9 @@ Forwarded: no
  wicd/networking.py |   24 ++++++++++++++++++++++++
  1 file changed, 24 insertions(+)
 
---- wicd.orig/wicd/networking.py
-+++ wicd/wicd/networking.py
-@@ -211,6 +211,12 @@ class Controller(object):
+--- wicd-git.orig/wicd/networking.py
++++ wicd-git/wicd/networking.py
+@@ -220,6 +220,12 @@ class Controller(object):
              mac = 'X'
          if name in (None, ''):
              name = 'X'
@@ -22,8 +22,8 @@ Forwarded: no
          misc.ExecuteScripts(wpath.predisconnectscripts, self.debug,
                             extra_parameters=(nettype, name, mac))
          if self.pre_disconnect_script:
-@@ -224,6 +230,8 @@ class Controller(object):
-         iface.FlushRoutes()
+@@ -234,6 +240,8 @@ class Controller(object):
+         iface.FlushDNS()
          iface.Down()
          iface.Up()
 +        os.putenv("PHASE", "post-down")
@@ -31,7 +31,7 @@ Forwarded: no
          misc.ExecuteScripts(wpath.postdisconnectscripts, self.debug,
                              extra_parameters=(nettype, name, mac))
          if self.post_disconnect_script:
-@@ -880,6 +888,12 @@ class WirelessConnectThread(ConnectThrea
+@@ -935,6 +943,12 @@ class WirelessConnectThread(ConnectThrea
          self.is_connecting = True
          
          # Run pre-connection script.
@@ -44,7 +44,7 @@ Forwarded: no
          self.run_global_scripts_if_needed(wpath.preconnectscripts,
                                            extra_parameters=('wireless',
                                                      self.network['essid'],
-@@ -929,6 +943,8 @@ class WirelessConnectThread(ConnectThrea
+@@ -986,6 +1000,8 @@ class WirelessConnectThread(ConnectThrea
          self.verify_association(wiface)
          
          # Run post-connection script.
@@ -53,7 +53,7 @@ Forwarded: no
          self.run_global_scripts_if_needed(wpath.postconnectscripts,
                                            extra_parameters=('wireless',
                                                      self.network['essid'],
-@@ -1135,6 +1151,12 @@ class WiredConnectThread(ConnectThread):
+@@ -1204,6 +1220,12 @@ class WiredConnectThread(ConnectThread):
          self.is_connecting = True
  
          # Run pre-connection script.
@@ -65,8 +65,8 @@ Forwarded: no
 +        self.run_global_scripts_if_needed('/etc/network/if-pre-up.d/')
          self.run_global_scripts_if_needed(wpath.preconnectscripts,
                                            extra_parameters=('wired', 'wired',
-                                                             self.network['profilename'])
-@@ -1162,6 +1184,8 @@ class WiredConnectThread(ConnectThread):
+                                                     self.network['profilename'])
+@@ -1232,6 +1254,8 @@ class WiredConnectThread(ConnectThread):
          self.set_dns_addresses(liface)
          
          # Run post-connection script.

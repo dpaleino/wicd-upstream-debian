@@ -8,9 +8,9 @@ Forwarded: no
  wicd/wnettools.py |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
---- wicd.orig/wicd/wnettools.py
-+++ wicd/wicd/wnettools.py
-@@ -285,7 +285,7 @@ class BaseInterface(object):
+--- wicd-git.orig/wicd/wnettools.py
++++ wicd-git/wicd/wnettools.py
+@@ -329,7 +329,7 @@ class BaseInterface(object):
          
          client_dict = {
              "dhclient" : 

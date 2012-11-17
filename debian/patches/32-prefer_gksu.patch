@@ -7,9 +7,9 @@ Forwarded: no
  wicd/misc.py |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
---- wicd.orig/wicd/misc.py
-+++ wicd/wicd/misc.py
-@@ -525,7 +525,7 @@ def choose_sudo_prog(prog_num=0):
+--- wicd-git.orig/wicd/misc.py
++++ wicd-git/wicd/misc.py
+@@ -555,7 +555,7 @@ def choose_sudo_prog(prog_num=0):
      if desktop_env == "kde":
          progs = ["kdesu", "kdesudo", "ktsuss"]
      else:
