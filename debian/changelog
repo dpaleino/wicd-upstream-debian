@@ -2,6 +2,8 @@ wicd-upstream (1.7.3-0) UNRELEASED; urgency=low
 
   * Wicd upstream development snapshot.
   * wicd-gtk: also install icons and gnome-shell extension.
+  * /etc/default/wicd: add new line to configure whether to keep old
+    behaviour on daemon close or not.
 
  -- David Paleino <dapal@debian.org>  Wed, 28 Nov 2012 16:26:22 +0100
 
