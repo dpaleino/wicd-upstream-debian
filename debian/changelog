@@ -1,8 +1,9 @@
 wicd-upstream (1.7.3-0) UNRELEASED; urgency=low
 
   * Wicd upstream development snapshot.
+  * wicd-gtk: also install icons and gnome-shell extension.
 
- -- David Paleino <dapal@debian.org>  Sat, 17 Nov 2012 22:30:49 +0100
+ -- David Paleino <dapal@debian.org>  Wed, 28 Nov 2012 16:26:22 +0100
 
 wicd-upstream (1.7.2.4-4) unstable; urgency=low
 
