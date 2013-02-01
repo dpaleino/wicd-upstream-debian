@@ -5,17 +5,19 @@ Origin: vendor
 Forwarded: no
 
 ---
- wicd/wnettools.py |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ wicd/wnettools.py |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 --- wicd-git.orig/wicd/wnettools.py
 +++ wicd-git/wicd/wnettools.py
-@@ -329,7 +329,7 @@ class BaseInterface(object):
+@@ -333,8 +333,8 @@ class BaseInterface(object):
          
          client_dict = {
              "dhclient" : 
 -                {'connect' : r"%(cmd)s -cf %(dhclientconf)s %(iface)s",
+-                 'connect_with_hostname' : r"%(cmd)s -cf %(dhclientconf)s %(iface)s",
 +                {'connect' : r"%(cmd)s %(iface)s",
++                 'connect_with_hostname' : r"%(cmd)s %(iface)s",
                   'release' : r"%(cmd)s -r %(iface)s",
                   'id' : misc.DHCLIENT, 
                   },
